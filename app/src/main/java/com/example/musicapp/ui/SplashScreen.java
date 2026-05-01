@@ -31,10 +31,11 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(()->{
             // Get authentication state from shared preferences later on
 
-            Intent intent = new Intent(this, LoginActivity.class);
+//            Intent intent = new Intent(this, LoginActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             finish();
 
-        }, 5000); // later on replace with local.properties
+        }, 500); // later on replace with local.properties
     }
 }
